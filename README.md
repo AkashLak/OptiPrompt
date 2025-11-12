@@ -89,14 +89,15 @@ DATA = [
 ```
 
 ## **Installation**
+# Clone the repository (Bash)
 git clone https://github.com/AkashLak/OptiPrompt.git
 
 cd OptiPrompt
-
+# Install dependencies
 pip install rapidfuzz openai
 
 Optional: export OPENAI_API_KEY="your_api_key_here"
-
+# Run the program
 python -m OptiPrompt
 
 ## **Behaviour**
