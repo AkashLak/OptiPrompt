@@ -3,6 +3,7 @@ from .models import DummyClient, OpenAIClient
 from .prompts import build_arms
 from .optimizer import Optimizer, _rule
 from .models import ModelClient
+from .optimizer import _truncate
 
 ###############
 #Demo Dataset (for testing purposes)
