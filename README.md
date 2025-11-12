@@ -38,6 +38,7 @@ This project integrates **reinforcement learning, prompt evaluation, and automat
 ---
 
 ## 🧩 **Architecture**
+```python
 OptiPrompt/
 ├─ __main__.py          # Main entry and training loop
 ├─ config.py            # Global flags, weights, and model settings
@@ -48,6 +49,7 @@ OptiPrompt/
 ├─ optimizer.py         # Core optimization engine
 ├─ models.py            # Model adapters (Dummy + OpenAI)
 └─ utils.py             # Helper functions (_truncate, _rule)
+```
 
 ---
 
@@ -57,19 +59,6 @@ OptiPrompt/
 3. **Score Responses** – Evaluates accuracy, coherence, and token efficiency 
 4. **Reinforce Learning** – Updates bandit rewards to prioritize top-performing arms  
 5. **Output Insights** – Displays the best prompt setup per input and overall best configuration  
-
----
-
-## 📈 **Sample Output**
-Epoch 0 | Trials
-────────────────────────────────────────────────────────────────────────────
-ARM PHRASING TEMP ACC COH SCORE LAT(s) INPUT
-────────────────────────────────────────────────────────────────────────────
-arm_0 plain 0.0 1.00 0.53 0.95 0.02 Who wrote the Harry Potter Books?
-...
-=== Best Prompt per Question ===
-Who wrote the Harry Potter Books? plain 0.0 0.95
-Compute 13 + 31 math_hint 0.2 0.95
 
 ---
 
@@ -97,15 +86,15 @@ DATA = [
     {"input": "Capital of France?", "reference": "Paris"},
     {"input": "Derivative of x^3 + 3x^2?", "reference": "3x^2 + 6x"},
 ]
+```
 
-Installation
+## **Installation**
 git clone https://github.com/AkashLak/OptiPrompt.git
 cd OptiPrompt
 pip install rapidfuzz openai
 Optional: export OPENAI_API_KEY="your_api_key_here"
 python -m OptiPrompt
 
-Behavior
-
+## **Behaviour**
 Offline Mode: Uses DummyClient for simulated responses (no API key needed)
 Live Mode: Uses OpenAIClient for real GPT outputs (requires API key)
