@@ -23,7 +23,7 @@ class Optimizer:
     Runs the optimization process
     Manages testing of arms, scoring performance, and learning best setup with UCB1 Bandit Algorithm
     """
-    def __init__(self, model: ModelClient, arms: T.List[Arm], w_acc = 0.85, w_coh = 0.15, w_cost = 0.01):
+    def __init__(self, model, arms: T.List[Arm], w_acc = 0.85, w_coh = 0.15, w_cost = 0.01):
         """
         Initializing the optimizer with model, all arms, and weight values for accuracy, coherence, and cost
         """
