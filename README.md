@@ -90,11 +90,16 @@ DATA = [
 
 ## **Installation**
 git clone https://github.com/AkashLak/OptiPrompt.git
+
 cd OptiPrompt
+
 pip install rapidfuzz openai
+
 Optional: export OPENAI_API_KEY="your_api_key_here"
+
 python -m OptiPrompt
 
 ## **Behaviour**
 Offline Mode: Uses DummyClient for simulated responses (no API key needed)
+
 Live Mode: Uses OpenAIClient for real GPT outputs (requires API key)
