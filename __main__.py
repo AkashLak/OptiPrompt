@@ -2,7 +2,7 @@ from .config import USE_DUMMY_MODEL, MODEL_NAME, OPENAI_API_KEY, W_ACC, W_COH, W
 from .models import DummyClient, OpenAIClient
 from .prompts import build_arms
 from .optimizer import Optimizer, _rule
-from .models import ModelClient, Arm
+from .models import ModelClient
 
 ###############
 #Demo Dataset (for testing purposes)
